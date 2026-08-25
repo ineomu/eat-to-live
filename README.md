@@ -30,7 +30,9 @@
 
 ## 🚀 30 秒上手
 
-把 `SKILL.md` 加载到你的 AI 助手（WorkBuddy/Claude / CodeX / 其他支持 Skill 的 agent），然后——
+> 还没安装？跳到下面的「🛠 怎么用」——**对你的 AI 说一句话就装好了**。
+
+装好后，随便问一句——
 
 ### 方式一：直接拍一张饭的照片发过去（最常用）
 
@@ -231,39 +233,37 @@ eat-to-live/
 
 ## 🛠 怎么用
 
-### 方法 1：WorkBuddy 用户
+### 方式 A：让 AI 自己安装（推荐）
 
-**最简单的方式——直接对你的 AI 说：**
+如果你的 AI 能自己动手干活——WorkBuddy、Claude Code、Cursor、其他 agent 类工具——直接对它说一句：
 
 > 帮我安装这个 skill：https://github.com/ineomu/eat-to-live
 
-AI 会自动把它下载到技能目录并加载，装完直接用。
+AI 会自动下载到技能目录并加载，装完直接用。
 
-**或者手动安装（1 条命令）：**
+<details>
+<summary>手动安装（可选）</summary>
 
 ```bash
 git clone https://github.com/ineomu/eat-to-live.git ~/.workbuddy/skills/eat-to-live
 ```
 
-不想用命令行也行：在本仓库页面点绿色 **Code → Download ZIP**，解压后把文件夹放进 `~/.workbuddy/skills/` 即可。
+不想碰命令行：本仓库页 → 绿色 **Code** 按钮 → **Download ZIP**，解压后把文件夹放进 `~/.workbuddy/skills/` 即可。卸载只需删除该文件夹。
 
-装完开个新会话，直接说「我今天吃了一碗牛肉面」或「帮我评一下这顿饭」（或直接发一张饭菜照片），skill 自动触发。卸载只需删除 `~/.workbuddy/skills/eat-to-live` 文件夹。
+</details>
 
-### 方法 2：其他支持 Skill 的平台
+### 方式 B：复制粘贴（网页版聊天 AI）
 
-Kimi Agent、MiniMax Agent、IMA Copilot、Claude Projects、Cursor、Continue.dev 等——直接上传/导入整个 `eat-to-live/` 文件夹。
+Claude / ChatGPT / Kimi 这类网页对话 AI 没法自己下载文件，手动加载只需两步：
 
-### 方法 3：直接用 Claude
+1. 打开 [SKILL.md](SKILL.md)，**全文复制**
+2. 粘贴到对应位置：
+   - **Claude** → 项目知识（Project Knowledge）或自定义指令
+   - **ChatGPT / GPTs** → Custom Instructions 或 GPT 的 Instructions
+   - **其他 AI** → system prompt
+3. 开聊即可——触发靠 SKILL.md 开头的 description 关键词
 
-把 `SKILL.md` 的内容复制到 Claude 的**项目知识（Project Knowledge）**或**自定义指令（Custom Instructions）**里，然后开聊。
-
-### 方法 4：作为 Prompt 模板
-
-`SKILL.md` 本身就是一份完整的 prompt 模板，你可以裁剪其中的"工作流"段用到任何 agent 里。
-
-### 方法 5：用在 GPT / 其他 AI
-
-把 `SKILL.md` 整段复制到 system prompt。触发场景识别靠 description 字段的关键词。
+> 不确定你的 AI 属于哪类？先试方式 A 说那句话，它说做不到再回来用方式 B。
 
 ---
 
