@@ -30,9 +30,13 @@
 
 ## 🚀 30 秒上手
 
-> 还没安装？跳到下面的「🛠 怎么用」——**对你的 AI 说一句话就装好了**。
+**第一步，安装**——直接对你的 AI 说一句话：
 
-装好后，随便问一句——
+> 帮我安装这个 skill：https://github.com/ineomu/eat-to-live
+
+用的是 Claude / ChatGPT 这类网页聊天 AI？它们没法自己下载文件——看紧跟着的「🛠 怎么用 · 方式 B」。
+
+**第二步，开聊**——随便问一句——
 
 ### 方式一：直接拍一张饭的照片发过去（最常用）
 
@@ -85,6 +89,42 @@ AI 给方案前会按临床流程问你一些基础信息：年龄、身高体�
 > *"我 58 岁女性，155cm/53kg，有轻度肺结节和胆结石，平时不怎么运动，帮我看看每天蛋白和膳食纤维该吃多少。"*
 
 你说得越全，方案越贴身。（这些信息只出现在你和 AI 的对话里，本项目不收集、不上传任何个人数据。）
+
+---
+
+## 🛠 怎么用
+
+### 方式 A：让 AI 自己安装（推荐）
+
+如果你的 AI 能自己动手干活——WorkBuddy、Claude Code、Cursor、其他 agent 类工具——直接对它说一句：
+
+> 帮我安装这个 skill：https://github.com/ineomu/eat-to-live
+
+AI 会自动下载到技能目录并加载，装完直接用。
+
+<details>
+<summary>手动安装（可选）</summary>
+
+```bash
+git clone https://github.com/ineomu/eat-to-live.git ~/.workbuddy/skills/eat-to-live
+```
+
+不想碰命令行：本仓库页 → 绿色 **Code** 按钮 → **Download ZIP**，解压后把文件夹放进 `~/.workbuddy/skills/` 即可。卸载只需删除该文件夹。
+
+</details>
+
+### 方式 B：复制粘贴（网页版聊天 AI）
+
+Claude / ChatGPT / Kimi 这类网页对话 AI 没法自己下载文件，手动加载只需两步：
+
+1. 打开 [SKILL.md](SKILL.md)，**全文复制**
+2. 粘贴到对应位置：
+   - **Claude** → 项目知识（Project Knowledge）或自定义指令
+   - **ChatGPT / GPTs** → Custom Instructions 或 GPT 的 Instructions
+   - **其他 AI** → system prompt
+3. 开聊即可——触发靠 SKILL.md 开头的 description 关键词
+
+> 不确定你的 AI 属于哪类？先试方式 A 说那句话，它说做不到再回来用方式 B。
 
 ---
 
@@ -228,42 +268,6 @@ eat-to-live/
     ├── architecture.md    ← 设计原理
     └── contributing.md    ← 贡献指南
 ```
-
----
-
-## 🛠 怎么用
-
-### 方式 A：让 AI 自己安装（推荐）
-
-如果你的 AI 能自己动手干活——WorkBuddy、Claude Code、Cursor、其他 agent 类工具——直接对它说一句：
-
-> 帮我安装这个 skill：https://github.com/ineomu/eat-to-live
-
-AI 会自动下载到技能目录并加载，装完直接用。
-
-<details>
-<summary>手动安装（可选）</summary>
-
-```bash
-git clone https://github.com/ineomu/eat-to-live.git ~/.workbuddy/skills/eat-to-live
-```
-
-不想碰命令行：本仓库页 → 绿色 **Code** 按钮 → **Download ZIP**，解压后把文件夹放进 `~/.workbuddy/skills/` 即可。卸载只需删除该文件夹。
-
-</details>
-
-### 方式 B：复制粘贴（网页版聊天 AI）
-
-Claude / ChatGPT / Kimi 这类网页对话 AI 没法自己下载文件，手动加载只需两步：
-
-1. 打开 [SKILL.md](SKILL.md)，**全文复制**
-2. 粘贴到对应位置：
-   - **Claude** → 项目知识（Project Knowledge）或自定义指令
-   - **ChatGPT / GPTs** → Custom Instructions 或 GPT 的 Instructions
-   - **其他 AI** → system prompt
-3. 开聊即可——触发靠 SKILL.md 开头的 description 关键词
-
-> 不确定你的 AI 属于哪类？先试方式 A 说那句话，它说做不到再回来用方式 B。
 
 ---
 
