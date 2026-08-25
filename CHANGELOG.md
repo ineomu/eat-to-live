@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### 🔧 Changed · 改进
+
+- **渐进式调查纪律**：所有入口首轮零门槛——基于声明假设直接给出有用结果，结尾再邀请用户补充 1-3 个关键信息（不甩问卷），越聊越精准
+
+---
+
 ## [1.0.0] - 2026-08-25
 
 ### ✨ Added · 新增
