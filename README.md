@@ -231,15 +231,23 @@ eat-to-live/
 
 ## 🛠 怎么用
 
-### 方法 1：WorkBuddy 用户（推荐，1 条命令）
+### 方法 1：WorkBuddy 用户
+
+**最简单的方式——直接对你的 AI 说：**
+
+> 帮我安装这个 skill：https://github.com/ineomu/eat-to-live
+
+AI 会自动把它下载到技能目录并加载，装完直接用。
+
+**或者手动安装（1 条命令）：**
 
 ```bash
 git clone https://github.com/ineomu/eat-to-live.git ~/.workbuddy/skills/eat-to-live
 ```
 
-装完开个新会话，直接说「我今天吃了一碗牛肉面」或「帮我评一下这顿饭」，skill 自动触发。不想用了，删掉这个文件夹即可。
+不想用命令行也行：在本仓库页面点绿色 **Code → Download ZIP**，解压后把文件夹放进 `~/.workbuddy/skills/` 即可。
 
-> 想用 `git pull` 随时更新到最新版？可以把仓库克隆到别处（如 `~/skills/eat-to-live`），再软链接到 skills 目录：`ln -s ~/skills/eat-to-live ~/.workbuddy/skills/eat-to-live`。普通用户直接 clone 进 skills 目录就够了，无需这一步。
+装完开个新会话，直接说「我今天吃了一碗牛肉面」或「帮我评一下这顿饭」（或直接发一张饭菜照片），skill 自动触发。卸载只需删除 `~/.workbuddy/skills/eat-to-live` 文件夹。
 
 ### 方法 2：其他支持 Skill 的平台
 
